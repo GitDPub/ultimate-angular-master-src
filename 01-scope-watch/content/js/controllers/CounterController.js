@@ -9,8 +9,8 @@ function CounterController($scope) {
 		this.count--;
 		this.countList.unshift({id: this.count});
 	};
-	$scope.watch('count', function(newValue, oldValue){
-	console.log(newValue, oldValue);
+	// $scope.$watch('count', function(newValue, oldValue){
+	// console.log(newValue, oldValue);
   });
 	$scope.$watchCollection(angular.bind(this, function () {
 		return this.countList;
