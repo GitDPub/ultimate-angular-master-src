@@ -11,7 +11,7 @@ function CounterController($scope) {
 	};
 	// $scope.$watch('count', function(newValue, oldValue){
 	// console.log(newValue, oldValue);
-  });
+  // });
 	$scope.$watchCollection(angular.bind(this, function () {
 		return this.countList;
 	}), function (newValue, oldValue) {
